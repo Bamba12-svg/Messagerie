@@ -1,0 +1,221 @@
+/* ============================================
+   MODERN DARK THEME - LOGIN WINDOW
+   JavaFX Chat Application
+   ============================================ */
+
+/* === ROOT BORDER PANE === */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+#borderPane {
+    -fx-background-color: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+}
+
+/* === GRID PANE === */
+.grid-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+    -fx-hgap: 8;
+    -fx-vgap: 6;
+}
+
+/* === LABELS === */
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* === TEXT FIELDS === */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.4);
+    -fx-padding: 8 14;
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-cursor: text;
+}
+
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: #7c4dff;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.35), 12, 0, 0, 0);
+}
+
+.text-field:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.10);
+    -fx-border-color: rgba(124, 77, 255, 0.5);
+}
+
+/* === CHOICE BOX === */
+.choice-box {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-padding: 4 8;
+    -fx-mark-color: #b388ff;
+}
+
+.choice-box:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(124, 77, 255, 0.5);
+}
+
+.choice-box:showing {
+    -fx-border-color: #7c4dff;
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.35), 12, 0, 0, 0);
+}
+
+.choice-box .label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 13px;
+    -fx-font-weight: normal;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: rgba(30, 27, 60, 0.95);
+    -fx-border-color: rgba(124, 77, 255, 0.3);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 4);
+}
+
+.choice-box .menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e0e0e0;
+    -fx-padding: 6 12;
+}
+
+.choice-box .menu-item:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.25);
+}
+
+.choice-box .menu-item .label {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* === CONNECT BUTTON === */
+#connectBtn {
+    -fx-background-color: linear-gradient(to right, #7c4dff, #651fff);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 40;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.45), 16, 0, 0, 4);
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+#connectBtn:hover {
+    -fx-background-color: linear-gradient(to right, #9c7cff, #7c4dff);
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.65), 22, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+#connectBtn:pressed {
+    -fx-background-color: linear-gradient(to right, #651fff, #4a148c);
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.3), 8, 0, 0, 2);
+    -fx-padding: 11 40 9 40;
+}
+
+/* === CLOSE BUTTON === */
+#CloseBtn {
+    -fx-graphic: url("../images/cross.png");
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-padding: 4;
+    -fx-opacity: 0.7;
+}
+
+#CloseBtn:hover {
+    -fx-background-color: rgba(255, 82, 82, 0.3);
+    -fx-opacity: 1;
+}
+
+#CloseBtn:pressed {
+    -fx-background-color: rgba(255, 82, 82, 0.5);
+    -fx-opacity: 1;
+}
+
+/* === MINIMIZE BUTTON === */
+#MinimizedBtn {
+    -fx-graphic: url("../images/line.png");
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-padding: 4;
+    -fx-opacity: 0.7;
+}
+
+#MinimizedBtn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-opacity: 1;
+}
+
+#MinimizedBtn:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+    -fx-opacity: 1;
+}
+
+/* === VERSION LABEL === */
+#versionLabel {
+    -fx-text-fill: rgba(255, 255, 255, 0.35);
+    -fx-font-size: 10px;
+    -fx-font-weight: normal;
+}
+
+/* === SCROLL BAR STYLING === */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(124, 77, 255, 0.4);
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.6);
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+/* === IMAGE VIEW CONTAINER === */
+.stack-pane {
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.3), 15, 0, 0, 0);
+}
+
+/* === TOOLTIP === */
+.tooltip {
+    -fx-background-color: rgba(30, 27, 60, 0.95);
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 12px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 10;
+    -fx-border-color: rgba(124, 77, 255, 0.3);
+    -fx-border-radius: 6px;
+}

@@ -1,0 +1,117 @@
+/* ============================================
+   MODERN DARK THEME - COMBO BOX
+   JavaFX Chat Application
+   ============================================ */
+
+/* === COMBO BOX === */
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-padding: 2 4;
+}
+
+.combo-box:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.10);
+    -fx-border-color: rgba(124, 77, 255, 0.4);
+}
+
+.combo-box:focused {
+    -fx-border-color: #7c4dff;
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.3), 8, 0, 0, 0);
+}
+
+.combo-box:showing {
+    -fx-border-color: #7c4dff;
+}
+
+/* === COMBO BOX LABEL TEXT === */
+.combo-box .list-cell {
+    -fx-text-fill: #d0d0e0;
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-padding: 3 6;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-border-color: transparent;
+}
+
+/* === ARROW BUTTON === */
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 4;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #b388ff;
+    -fx-shape: "M 0 0 L 6 4 L 12 0 Z";
+}
+
+/* === DROPDOWN POPUP === */
+.combo-box-popup .list-view {
+    -fx-background-color: rgba(22, 33, 62, 0.97);
+    -fx-border-color: rgba(124, 77, 255, 0.3);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 16, 0, 0, 4);
+    -fx-padding: 4;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d0d0e0;
+    -fx-padding: 8 14;
+    -fx-font-size: 12px;
+    -fx-background-radius: 4px;
+    -fx-border-color: transparent;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.20);
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: rgba(124, 77, 255, 0.30);
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box-popup .list-cell:selected:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.40);
+    -fx-text-fill: #ffffff;
+}
+
+/* === COMBO BOX TEXT FIELD (editable) === */
+.comboTextField {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d0d0e0;
+    -fx-padding: 4 8;
+    -fx-cursor: hand;
+}
+
+.comboTextField:focused {
+    -fx-background-color: transparent;
+}
+
+/* === COMBO BUTTON === */
+.comboButton {
+    -fx-background-color: transparent;
+}
+
+.comboButton:focused {
+    -fx-background-color: transparent;
+}
+
+.comboFocus {
+    -fx-border-color: #7c4dff;
+    -fx-border-insets: -1;
+    -fx-border-radius: 6px;
+}
+
+.comboFocusOut {
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 6px;
+}

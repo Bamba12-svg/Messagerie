@@ -1,0 +1,128 @@
+/* ============================================
+   MODERN DARK THEME - LIST VIEW / USER LIST
+   JavaFX Chat Application
+   ============================================ */
+
+/* === LIST VIEW === */
+.list-view {
+    -fx-background-color: #16213e;
+    -fx-background: #16213e;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.list-view .virtual-flow .clipped-container .sheet .list-cell {
+    -fx-background-color: transparent;
+}
+
+/* === LIST CELL === */
+.list-cell {
+    -fx-cell-size: 55;
+    -fx-background-color: transparent;
+    -fx-padding: 6 12;
+    -fx-border-color: transparent transparent rgba(255, 255, 255, 0.05) transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #d0d0e0;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+.list-cell:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.12);
+    -fx-border-color: transparent transparent rgba(124, 77, 255, 0.2) transparent;
+}
+
+.list-cell:selected {
+    -fx-background-color: rgba(124, 77, 255, 0.2);
+    -fx-border-color: transparent transparent rgba(124, 77, 255, 0.3) transparent;
+}
+
+.list-cell:selected:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.25);
+}
+
+.list-cell:focused {
+    -fx-background-color: rgba(124, 77, 255, 0.15);
+}
+
+.list-cell .label {
+    -fx-text-fill: #d0d0e0;
+}
+
+.list-cell:selected .label {
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* === ONLINE USERS HEADER === */
+#onlineUsersHbox {
+    -fx-background-color: linear-gradient(to right, #0f3460, #16213e);
+    -fx-border-color: transparent transparent rgba(124, 77, 255, 0.25) transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 8 12;
+    -fx-spacing: 4;
+}
+
+#onlineUsersHbox .label {
+    -fx-text-fill: #b388ff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* === STATUS LIST === */
+#statusList {
+    -fx-background-color: #16213e;
+    -fx-border-color: transparent;
+}
+
+/* === USER LIST === */
+#userList {
+    -fx-background-color: #16213e;
+    -fx-border-color: transparent;
+}
+
+/* === LIST HBOX === */
+#listHbox {
+    -fx-background-color: #16213e;
+    -fx-padding: 4;
+    -fx-spacing: 0;
+}
+
+/* === SCROLL BAR INSIDE LIST === */
+.list-view .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar .thumb {
+    -fx-background-color: rgba(124, 77, 255, 0.3);
+    -fx-background-radius: 4px;
+}
+
+.list-view .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.5);
+}
+
+.list-view .scroll-bar .increment-button,
+.list-view .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.list-view .scroll-bar .increment-arrow,
+.list-view .scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+.list-view .corner {
+    -fx-background-color: transparent;
+}

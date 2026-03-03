@@ -1,0 +1,203 @@
+/* ============================================
+   MODERN DARK THEME - CHAT VIEW
+   JavaFX Chat Application
+   ============================================ */
+
+/* === ROOT & BORDER PANE === */
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+#borderPane {
+    -fx-background-color: #1a1a2e;
+}
+
+/* === TOP BAR / HEADER === */
+#topBar {
+    -fx-background-color: linear-gradient(to right, #16213e, #0f3460);
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 3);
+}
+
+/* === CHAT AREA === */
+.vbox {
+    -fx-background-color: #1a1a2e;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+/* === SCROLL PANE === */
+.scroll-pane {
+    -fx-background-color: #1a1a2e;
+    -fx-background: #1a1a2e;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane>.viewport {
+    -fx-background-color: #1a1a2e;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+/* === CHAT LIST VIEW === */
+#chatPane {
+    -fx-background-color: #1a1a2e;
+    -fx-background: #1a1a2e;
+    -fx-border-color: transparent;
+    -fx-padding: 8;
+}
+
+#chatPane .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 4 8;
+    -fx-border-color: transparent;
+}
+
+#chatPane .list-cell:selected {
+    -fx-background-color: transparent;
+}
+
+#chatPane .list-cell:focused {
+    -fx-background-color: transparent;
+}
+
+/* === MESSAGE INPUT AREA === */
+.text-area {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #e8e8e8;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.35);
+    -fx-font-size: 14px;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 12;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.text-area .content {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+}
+
+.text-area:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: #7c4dff;
+}
+
+.text-area:focused .content {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* === SEND BUTTON === */
+#buttonSend {
+    -fx-background-color: linear-gradient(to right, #7c4dff, #651fff);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 28;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-cursor: hand;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-effect: none;
+}
+
+#buttonSend:hover {
+    -fx-background-color: linear-gradient(to right, #9c7cff, #7c4dff);
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.3), 10, 0, 0, 0);
+}
+
+#buttonSend:pressed {
+    -fx-background-color: linear-gradient(to right, #651fff, #4a148c);
+}
+
+/* === RECORD / MICROPHONE BUTTON === */
+#recordBtn {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1 0 0 1;
+    -fx-padding: 8 14;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+}
+
+#recordBtn:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.2);
+}
+
+#recordBtn:pressed {
+    -fx-background-color: rgba(124, 77, 255, 0.35);
+}
+
+/* === USERNAME LABEL IN HEADER === */
+#usernameLabel {
+    -fx-text-fill: #b388ff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+/* === ONLINE USERS LABEL === */
+#onlineCountLabel {
+    -fx-text-fill: #b388ff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* === HEADER IMAGE / LOGO AREA === */
+#headerPane {
+    -fx-background-color: linear-gradient(to right, #16213e, #0f3460);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 3);
+}
+
+/* === LABELS GENERAL === */
+.label {
+    -fx-text-fill: #d0d0e0;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* === SCROLL BAR STYLING === */
+.scroll-bar {
+    -fx-background-color: rgba(26, 26, 46, 0.5);
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(124, 77, 255, 0.35);
+    -fx-background-radius: 6px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(124, 77, 255, 0.55);
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: rgba(124, 77, 255, 0.7);
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+/* === TOOLTIP === */
+.tooltip {
+    -fx-background-color: rgba(30, 27, 60, 0.95);
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 12px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 10;
+    -fx-border-color: rgba(124, 77, 255, 0.3);
+    -fx-border-radius: 6px;
+}

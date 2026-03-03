@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="90.0" prefWidth="470.0"
+            style="-fx-background-color: linear-gradient(to right, #1a1a2e, #16213e); -fx-background-radius: 12; -fx-border-color: rgba(124,77,255,0.3); -fx-border-width: 1; -fx-border-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 20, 0, 0, 4);"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="rectangleColor" arcHeight="12.0" arcWidth="12.0" fill="#7c4dff" height="88.0"
+                 layoutX="1.0" layoutY="1.0" stroke="TRANSPARENT" strokeType="INSIDE"
+                 style="-fx-arc-width: 12; -fx-arc-height: 12;" width="6.0" />
+      <ImageView fx:id="imageIcon" fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="20.0"
+                 pickOnBounds="true" />
+      <Label fx:id="lblTitle" layoutX="90.0" layoutY="14.0" text="Title:"
+             style="-fx-text-fill: #b388ff;" wrapText="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMessage" layoutX="90.0" layoutY="50.0" text="Message:"
+             style="-fx-text-fill: #d0d0e0;" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblClose" layoutX="448.0" layoutY="4.0" text="✕"
+             style="-fx-text-fill: rgba(255,255,255,0.5);">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

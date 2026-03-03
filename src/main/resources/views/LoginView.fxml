@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<BorderPane fx:id="borderPane" maxWidth="350.0" minWidth="350.0" prefHeight="480.0" prefWidth="350.0"
+            stylesheets="@../styles/Login.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.client.login.LoginController">
+   <right>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="103.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="103.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="12.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" />
+         </rowConstraints>
+         <children>
+            <Label text="Pseudo : " textFill="#b388ff" GridPane.rowIndex="3">
+               <font><Font name="Segoe UI" size="13.0" /></font>
+            </Label>
+            <TextField fx:id="usernameTextfield" promptText="Entrer votre pseudo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Pass : " textFill="#b388ff" GridPane.rowIndex="4">
+               <font><Font name="Segoe UI" size="13.0" /></font>
+            </Label>
+            <PasswordField fx:id="passwordField" promptText="Entrer votre mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <children>
+                  <Button id="connectBtn" mnemonicParsing="false" onAction="#loginButtonAction" text="Se connecter" prefWidth="160" />
+                  <Button id="registerBtn" mnemonicParsing="false" onAction="#registerButtonAction" text="S'inscrire" prefWidth="160" style="-fx-background-color: transparent; -fx-text-fill: #b388ff; -fx-border-color: #7c4dff; -fx-border-radius: 15; -fx-background-radius: 15;" />
+               </children>
+            </VBox>
+
+            <Label text="Hôte : " textFill="#b388ff" GridPane.rowIndex="6">
+               <font><Font name="Segoe UI" size="13.0" /></font>
+            </Label>
+            <TextField fx:id="hostnameTextfield" text="localhost" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+            <Label text="Port : " textFill="#b388ff" GridPane.rowIndex="7">
+               <font><Font name="Segoe UI" size="13.0" /></font>
+            </Label>
+            <TextField fx:id="portTextfield" text="9001" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+            <Label prefHeight="22.0" prefWidth="120.0" text="⚙ Paramètres réseau" textFill="#7c4dff"
+                   GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font><Font name="Segoe UI Semibold" size="12.0" /></font>
+            </Label>
+
+            <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="Defaultview" fitHeight="80" fitWidth="80" pickOnBounds="true" preserveRatio="true">
+                     <image><Image url="@../images/default.png" /></image>
+                  </ImageView>
+                  <ImageView fx:id="Sarahview" fitHeight="80" fitWidth="80" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image><Image url="@../images/sarah.png" /></image>
+                  </ImageView>
+                  <ImageView fx:id="Dominicview" fitHeight="80" fitWidth="80" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image><Image url="@../images/dominic.png" /></image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ChoiceBox fx:id="imagePicker" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Default" /><String fx:value="Dominic" /><String fx:value="Sarah" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            
+            <HBox alignment="TOP_RIGHT" spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               <children>
+                  <Button id="MinimizedBtn" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24" prefWidth="40" />
+                  <Button id="CloseBtn" mnemonicParsing="false" onAction="#closeSystem" prefHeight="24" prefWidth="40" />
+               </children>
+               <padding><Insets right="5" top="5"/></padding>
+            </HBox>
+            
+            <Label id="versionLabel" text="JavaFX Chat v1.1" textFill="rgba(255,255,255,0.35)"
+                   GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font><Font name="Segoe UI" size="9.0" /></font>
+            </Label>
+         </children>
+      </GridPane>
+   </right>
+</BorderPane>

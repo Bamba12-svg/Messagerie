@@ -1,0 +1,40 @@
+/* ============================================
+   MODERN DARK THEME - BUTTON STYLES
+   JavaFX Chat Application
+   ============================================ */
+
+/* === GENERAL BUTTON === */
+.button {
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(124, 77, 255, 0.3), 8, 0, 0, 0);
+}
+
+.button:pressed {
+    -fx-opacity: 0.9;
+}
+
+/* === SETTINGS / ICON BUTTONS IN HEADER === */
+#settingsIcon {
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+}
+
+#settingsIcon:hover {
+    -fx-opacity: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.4), 10, 0, 0, 0);
+}
+
+#closeIcon {
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+}
+
+#closeIcon:hover {
+    -fx-opacity: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(255, 82, 82, 0.5), 10, 0, 0, 0);
+}
