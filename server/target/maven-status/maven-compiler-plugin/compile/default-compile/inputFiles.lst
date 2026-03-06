@@ -1,0 +1,11 @@
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\server\repositories\UserRepository.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\server\util\HibernateUtil.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\server\repositories\MessageRepository.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\server\entities\Message.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\messages\MessageType.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\messages\User.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\server\Server.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\messages\Status.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\server\entities\User.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\messages\Message.java
+D:\projet-examen-java\JavaFX-Chat\server\src\main\java\com\exception\DuplicateUsernameException.java
